@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 
 
 class Todo extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Todo</h1>
-      </div>
-    );
+    render() {
+  	return this.props.todo.map((todo) => (
+  		<h3>{ todo.title }</h3>
+  		
+  		));
   }
 }
 
