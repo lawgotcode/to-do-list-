@@ -6,7 +6,7 @@ import todoitem from './todoitem';
 class Todo extends Component {
     render() {
   	return this.props.todo.map((todo) => (
-  		<todoitem />
+  		<todoitem todo={todo} />
   		
   		));
   }
